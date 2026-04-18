@@ -1,14 +1,8 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+//! Library entry point.
+//!
+//! This crate exposes two main modules:
+//! - `calendar`: internal logic for computing liturgical dates
+//! - `ffi`: C-compatible API for external languages (Swift, Kotlin, C++, Python, etc.)
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+pub mod calendar;
+pub mod ffi;
