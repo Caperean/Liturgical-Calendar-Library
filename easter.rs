@@ -1,4 +1,4 @@
-//! Easter calculation module (Gregorian calendar)
+
 
 use chrono::NaiveDate;
 
