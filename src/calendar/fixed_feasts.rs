@@ -1,11 +1,8 @@
-//! Universal fixed-date liturgical feasts (valid for all countries)
-//!
-//! These feasts occur on the same date every year and are part of the
-//! universal Roman Catholic calendar.
+
 
 use chrono::NaiveDate;
 
-/// Universal fixed-date feasts of the Roman Catholic Church.
+
 #[derive(Debug, Clone)]
 pub enum FixedFeast {
     MaryMotherOfGod,          // Jan 1
@@ -20,7 +17,6 @@ pub enum FixedFeast {
     Christmas,                // Dec 25
 }
 
-/// Returns the fixed feast for a given date, if any.
 pub fn get_fixed_feast(date: NaiveDate) -> Option<FixedFeast> {
     match (date.month(), date.day()) {
         (1, 1)   => Some(FixedFeast::MaryMotherOfGod),
