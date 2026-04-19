@@ -11,13 +11,14 @@ pub enum LiturgicalSeason {
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize)]
 pub enum LiturgicalRank {
-    Solemnity,
-    Sunday,
-    Feast,
-    Memorial,
-    OptionalMemorial,
-    Feria,
+    Solemnity,         
+    Sunday,            
+    Feast,             
+    Memorial,          
+    OptionalMemorial,  
+    Feria,            
 }
+
 impl LiturgicalRank {
     pub fn priority(&self) -> u8 {
         match self {
@@ -30,6 +31,7 @@ impl LiturgicalRank {
         }
     }
 }
+
 #[derive(Debug, Clone, PartialEq, Eq, Serialize)]
 pub enum LiturgicalColor {
     White,
