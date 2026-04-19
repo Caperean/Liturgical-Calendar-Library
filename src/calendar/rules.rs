@@ -12,7 +12,7 @@ pub enum LiturgicalSeason {
 #[derive(Debug, Clone, PartialEq, Eq, Serialize)]
 pub enum LiturgicalRank {
     Solemnity,
-    Sunday
+    Sunday,
     Feast,
     Memorial,
     OptionalMemorial,
