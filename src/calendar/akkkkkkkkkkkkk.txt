@@ -1,0 +1,18 @@
+ffi.rs
+lib.rs // biblioteka
+
+date.rs funkcje pomocznicze
+easter.rs obliczanie wielkanocy
+
+calendar_gen // główna funkcja generowania kalendarza
+getday // funkcja szukania dnia 
+etc.rs //dodatkowe funckje  jak czy isCalendargood
+
+
+/data
+seasons //dane
+colors
+ranks
+
+fixed feats//  swieta  stałe
+movable feats święta przenośne
