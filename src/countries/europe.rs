@@ -1,0 +1,61 @@
+mod country_code;
+use country_code::Europe;
+
+use chrono::NaiveDate;
+
+pub fn europe_name(country: Europe, date: NaiveDate) -> Vec<Feast> {
+    let mut feasts = Vec::new();
+    match country {
+        Europe::PL => {} //Polish feasts
+        Europe::AL => "Albania",
+        Europe::AT => "Austria",
+        Europe::AX => "Åland Islands",
+        Europe::BA => "Bosnia and Herzegovina",
+        Europe::BE => "Belgium",
+        Europe::BG => "Bulgaria",
+        Europe::BY => "Belarus",
+        Europe::CH => "Switzerland",
+        Europe::CZ => "Czechia",
+        Europe::DE => "Germany",
+        Europe::DK => "Denmark",
+        Europe::EE => "Estonia",
+        Europe::ES => "Spain",
+        Europe::FI => "Finland",
+        Europe::FO => "Faroe Islands",
+        Europe::FR => "France",
+        Europe::GB => "United Kingdom",
+        Europe::GG => "Guernsey",
+        Europe::GI => "Gibraltar",
+        Europe::GR => "Greece",
+        Europe::HR => "Croatia",
+        Europe::HU => "Hungary",
+        Europe::IE => "Ireland",
+        Europe::IM => "Isle of Man",
+        Europe::IS => "Iceland",
+        Europe::IT => "Italy",
+        Europe::JE => "Jersey",
+        Europe::LI => "Liechtenstein",
+        Europe::LT => "Lithuania",
+        Europe::LU => "Luxembourg",
+        Europe::LV => "Latvia",
+        Europe::MC => "Monaco",
+        Europe::MD => "Moldova",
+        Europe::ME => "Montenegro",
+        Europe::MK => "North Macedonia",
+        Europe::MT => "Malta",
+        Europe::NL => "Netherlands",
+        Europe::NO => "Norway",
+        Europe::PL => "Poland",
+        Europe::PT => "Portugal",
+        Europe::RO => "Romania",
+        Europe::RS => "Serbia",
+        Europe::RU => "Russia",
+        Europe::SE => "Sweden",
+        Europe::SI => "Slovenia",
+        Europe::SJ => "Svalbard and Jan Mayen",
+        Europe::SK => "Slovakia",
+        Europe::SM => "San Marino",
+        Europe::UA => "Ukraine",
+        Europe::VA => "Vatican City",
+    }
+}
